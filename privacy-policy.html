@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Talk with Lily: English Tutor</title>
+    <style>
+        :root {
+            --primary: #1B5E20;
+            --primary-light: #2E7D32;
+            --bg: #F9FBF7;
+            --surface: #FFFFFF;
+            --text-main: #1A2E1A;
+            --text-muted: #556B55;
+            --border: #E0E8DC;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 24px 16px;
+        }
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: var(--surface);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+        h1 {
+            color: var(--primary);
+            font-size: 28px;
+            margin-top: 0;
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 16px;
+        }
+        h2 {
+            color: var(--primary-light);
+            font-size: 20px;
+            margin-top: 32px;
+        }
+        p, li {
+            color: var(--text-main);
+            font-size: 15px;
+        }
+        ul {
+            padding-left: 24px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .badge {
+            display: inline-block;
+            background-color: #E8F5E9;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 13px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+        .highlight-box {
+            background: #E8F5E9;
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">Privacy First • Zero Subscriptions • BYOK</span>
+        <h1>Privacy Policy for Talk with Lily: English Tutor</h1>
+        <p><strong>Effective Date:</strong> September 30, 2026<br>
+        <strong>Developer:</strong> Lalith Madanayake (lmadanayake@gmail.com)</p>
+
+        <div class="highlight-box">
+            <strong>Summary:</strong> <em>Talk with Lily</em> is a privacy-first, one-time paid app. We do NOT collect, store, sell, or transmit any personal data, conversations, or account information to developer servers. The app uses a Bring-Your-Own-Key (BYOK) architecture where your private API keys and chat history stay exclusively on your device.
+        </div>
+
+        <h2>1. Information We Collect and Process</h2>
+        <p>Talk with Lily does not operate private backend servers, analytics services, or user tracking infrastructure.</p>
+        <ul>
+            <li><strong>No User Account:</strong> You do not need to register, log in, or provide personal details (name, email, phone) to use the app.</li>
+            <li><strong>No Telemetry or Analytics:</strong> The app contains zero advertising SDKs, zero user tracking scripts, and zero diagnostic telemetry.</li>
+            <li><strong>Local Storage Only:</strong> All conversation settings, selected difficulty levels, and user API keys are stored solely on your device inside Android's private <code>SharedPreferences</code> container.</li>
+        </ul>
+
+        <h2>2. Bring Your Own Key (BYOK) Architecture</h2>
+        <p>Talk with Lily connects directly from your device to third-party AI model providers using the credentials you provide:</p>
+        <ul>
+            <li>Supported providers include Anthropic (Claude), Groq, OpenAI, and Google (Gemini).</li>
+            <li>When you send a message, your conversation prompt is transmitted directly from your device to the official endpoint of your chosen provider via encrypted HTTPS.</li>
+            <li>Your API keys and conversations are never routed through, stored on, or accessible by our servers or any third-party intermediary.</li>
+            <li>Your interactions with each AI provider are subject to that respective provider's terms of service and privacy policy.</li>
+        </ul>
+
+        <h2>3. Device Permissions &amp; Data Usage</h2>
+        <ul>
+            <li><strong>Microphone (<code>android.permission.RECORD_AUDIO</code>):</strong> Used only when you tap the microphone button to practice spoken English. Audio is converted into text via the Android operating system's built-in Speech Recognizer. Audio recordings are never retained, stored, or uploaded to any server.</li>
+            <li><strong>Internet (<code>android.permission.INTERNET</code>):</strong> Used exclusively to communicate with the user-selected AI API endpoints and D-ID video service.</li>
+        </ul>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <p>Because all data resides strictly on your local device:</p>
+        <ul>
+            <li>You can wipe your chat history, API keys, and preferences at any time by clearing the app's storage in <em>Android Settings &gt; Apps &gt; Talk with Lily &gt; Storage &gt; Clear Data</em>.</li>
+            <li>Uninstalling the app immediately and permanently purges all local data from your device.</li>
+        </ul>
+
+        <h2>5. Children's Privacy</h2>
+        <p>Our app does not knowingly collect or solicit any personally identifiable information from children under the age of 13. The app is rated for Everyone and operates completely client-side.</p>
+
+        <h2>6. Changes to this Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+        <h2>7. Contact Information</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy or the security of the app, please contact:</p>
+        <p><strong>Lalith Madanayake</strong><br>
+        Email: <a href="mailto:lmadanayake@gmail.com">lmadanayake@gmail.com</a><br>
+        Location: Sri Lanka</p>
+
+        <div class="footer">
+            &copy; 2026 Talk with Lily. All rights reserved. Built with privacy and user empowerment in mind.
+        </div>
+    </div>
+</body>
+</html>

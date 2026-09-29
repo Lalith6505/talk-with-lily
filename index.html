@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Talk with Lily: English Tutor — Official Webpage &amp; Privacy Policy</title>
+  <meta name="description" content="Talk with Lily is an interactive spoken English tutor app. Practice conversation with Lily across 3 CEFR levels with natural voice and multi-AI model support. One-time purchase, zero subscriptions.">
+  <link rel="icon" type="image/png" href="playstore_icon_512.png">
+
+  <style>
+    :root {
+      --bg: #0A1C0E;
+      --bg-surface: #102A17;
+      --card-bg: rgba(18, 48, 26, 0.85);
+      --primary: #2E7D32;
+      --primary-light: #4CAF50;
+      --accent: #81C784;
+      --pale: #A5D6A7;
+      --gold: #FFD54F;
+      --text: #F1F8E9;
+      --text-muted: #A5BAA3;
+      --border: rgba(129, 199, 132, 0.25);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      background-image:
+        radial-gradient(ellipse 80% 50% at 50% -10%, rgba(46, 125, 50, 0.35), transparent 70%),
+        radial-gradient(ellipse 60% 40% at 90% 80%, rgba(27, 94, 32, 0.25), transparent 60%);
+    }
+    header {
+      padding: 20px 24px;
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-img {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      object-fit: cover;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+    .brand-title {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.01em;
+    }
+    .brand-subtitle {
+      font-size: 0.75rem;
+      color: var(--pale);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.92rem;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: var(--accent); }
+    .hero {
+      text-align: center;
+      max-width: 900px;
+      margin: 60px auto 30px auto;
+      padding: 0 20px;
+    }
+    .avatar-wrapper {
+      position: relative;
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 24px auto;
+    }
+    .avatar-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      object-fit: cover;
+      box-shadow: 0 8px 32px rgba(46, 125, 50, 0.45);
+    }
+    .avatar-status {
+      position: absolute;
+      bottom: 8px;
+      right: 12px;
+      background: #4CAF50;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      border: 2px solid var(--bg);
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(129, 199, 132, 0.12);
+      border: 1px solid var(--accent);
+      color: var(--gold);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg, #FFFFFF 30%, var(--pale) 70%, var(--accent) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.18rem;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      max-width: 760px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-row {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 30px;
+      font-weight: 700;
+      font-size: 0.98rem;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #2E7D32, #1B5E20);
+      color: #FFFFFF;
+      border: 1px solid var(--accent);
+      box-shadow: 0 4px 20px rgba(46, 125, 50, 0.4);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(129, 199, 132, 0.5);
+    }
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .section-title {
+      text-align: center;
+      margin: 70px auto 16px auto;
+      font-size: 2.1rem;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+    .section-desc {
+      text-align: center;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin: 0 auto 40px auto;
+      font-size: 1.02rem;
+    }
+    /* Level Cards */
+    .levels-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .level-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .level-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+    .level-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 12px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+    .badge-basic { background: rgba(76, 175, 80, 0.2); color: #81C784; border: 1px solid #4CAF50; }
+    .badge-inter { background: rgba(0, 137, 123, 0.2); color: #80CBC4; border: 1px solid #00897B; }
+    .badge-pro { background: rgba(123, 31, 162, 0.2); color: #CE93D8; border: 1px solid #7B1FA2; }
+    .level-card h3 { font-size: 1.3rem; margin-bottom: 10px; color: #FFFFFF; }
+    .level-card p { font-size: 0.92rem; color: var(--text-muted); line-height: 1.55; }
+
+    /* Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 22px;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      backdrop-filter: blur(10px);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .feature-card h3 {
+      font-size: 1.18rem;
+      color: #FFFFFF;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .feature-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Listing Copy Box */
+    .listing-box {
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 32px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    }
+    .copy-block {
+      background: #09170C;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 14px;
+      position: relative;
+    }
+    .copy-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .copy-header h4 {
+      color: var(--pale);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .btn-copy {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-copy:hover { background: var(--primary-light); }
+    .copy-content {
+      font-family: monospace;
+      font-size: 0.88rem;
+      color: #E8F5E9;
+      white-space: pre-wrap;
+      word-break: break-word;
+      line-height: 1.5;
+    }
+
+    /* Privacy Policy Section */
+    .privacy-section {
+      max-width: 1000px;
+      margin: 80px auto 40px auto;
+      background: #FFFFFF;
+      color: #1A2E1A;
+      padding: 44px;
+      border-radius: 20px;
+      box-shadow: 0 12px 50px rgba(0,0,0,0.5);
+    }
+    .privacy-section h2 {
+      font-size: 1.8rem;
+      color: #1B5E20;
+      margin-bottom: 8px;
+      border-bottom: 2px solid #E0E8DC;
+      padding-bottom: 12px;
+    }
+    .privacy-section h3 {
+      font-size: 1.25rem;
+      color: #2E7D32;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+    .privacy-section p, .privacy-section li {
+      color: #283B28;
+      font-size: 0.96rem;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .privacy-section ul { padding-left: 24px; }
+    .privacy-badge {
+      display: inline-block;
+      background: #E8F5E9;
+      color: #1B5E20;
+      font-weight: 700;
+      font-size: 0.8rem;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+    .highlight-card {
+      background: #F1F8E9;
+      border-left: 4px solid #2E7D32;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-top: 60px;
+    }
+    footer a { color: var(--pale); text-decoration: none; font-weight: 600; }
+    footer a:hover { color: var(--accent); }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.2rem; }
+      nav { display: none; }
+      .privacy-section { padding: 24px; }
+      .listing-box { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <a href="#" class="brand">
+      <img src="playstore_icon_512.png" alt="Lily Avatar" class="brand-img" onerror="this.style.display='none'">
+      <div>
+        <div class="brand-title">Talk with Lily</div>
+        <div class="brand-subtitle">AI Spoken English Tutor</div>
+      </div>
+    </a>
+    <nav>
+      <a href="#levels">Learning Levels</a>
+      <a href="#features">Features</a>
+      <a href="#listing-copy">Store Copy</a>
+      <a href="#privacy">Privacy Policy</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="avatar-wrapper">
+      <img src="playstore_icon_512.png" alt="Lily Tutor" class="avatar-img" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'160\' height=\'160\'><circle cx=\'80\' cy=\'80\' r=\'80\' fill=\'%232E7D32\'/><text x=\'50%25\' y=\'55%25\' font-size=\'48\' text-anchor=\'middle\' fill=\'white\'>👩‍🏫</text></svg>'">
+      <div class="avatar-status">Online</div>
+    </div>
+    <div class="hero-badge">One-Time $4.99 • Zero Subscriptions • BYOK Model</div>
+    <h1>Master Spoken English with Lily</h1>
+    <p>
+      Your friendly, patient AI conversational partner. Practice speaking naturally across 3 CEFR levels with real-time speech recognition, natural voice synthesis, and multi-model AI flexibility.
+    </p>
+    <div class="cta-row">
+      <a href="#listing-copy" class="btn btn-primary">Google Play Copy &rarr;</a>
+      <a href="#privacy" class="btn btn-outline">Read Privacy Policy</a>
+    </div>
+  </div>
+
+  <!-- Learning Levels -->
+  <div id="levels">
+    <h2 class="section-title">3 Tailored Learning Levels</h2>
+    <p class="section-desc">Lily automatically adapts her vocabulary, pacing, and grammatical nuance to your proficiency level.</p>
+
+    <div class="levels-grid">
+      <div class="level-card">
+        <span class="level-badge badge-basic">CEFR A1–A2</span>
+        <h3>🌱 Basic Level</h3>
+        <p>
+          Perfect for beginners. Simple words, short sentences, and a gentle, encouraging pace. Topics include greetings, daily routines, family, hobbies, and food.
+        </p>
+      </div>
+
+      <div class="level-card">
+        <span class="level-badge badge-inter">CEFR B1–B2</span>
+        <h3>🌿 Intermediate Level</h3>
+        <p>
+          Build real conversational fluency and confidence. Lily introduces common idioms, phrasal verbs, and open-ended questions about travel, career, and culture.
+        </p>
+      </div>
+
+      <div class="level-card">
+        <span class="level-badge badge-pro">CEFR C1–C2</span>
+        <h3>🌳 Professional Level</h3>
+        <p>
+          Designed for executives and academics. Master workplace discussions, subtle rhetorical nuance, idiomatic expressions, debates, and complex current affairs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div id="features">
+    <h2 class="section-title">Why Students Love Lily</h2>
+    <p class="section-desc">Engineered for interactive practice, complete privacy, and zero recurring fees.</p>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🎙️</div>
+        <h3>Natural Voice STT &amp; TTS</h3>
+        <p>Tap the mic to speak and hear Lily reply aloud with clear native-like pronunciation. Full support for text chat whenever you are in public.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Multi-AI Flexibility (BYOK)</h3>
+        <p>Switch seamlessly between Anthropic Claude, Groq (Fast &amp; Free tier), OpenAI ChatGPT, and Google Gemini with your own API key.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">💰</div>
+        <h3>No Monthly Subscriptions</h3>
+        <p>Pay once ($4.99) and own the app forever. No \$20/month SaaS lock-in, no hidden paywalls, and no advertisements.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>100% On-Device Privacy</h3>
+        <p>Your API keys, conversation logs, and settings reside strictly on your phone. Prompts go directly to your chosen AI provider via secure HTTPS.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">🎥</div>
+        <h3>Optional D-ID Talking Video</h3>
+        <p>Connect an optional D-ID API key to unlock a face-to-face animated video avatar of Lily talking directly to you.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">❤️</div>
+        <h3>Gentle, Supportive Tutoring</h3>
+        <p>Never feel nervous making mistakes. Lily provides warm, constructive corrections and guides you toward natural phrasing.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Google Play Store Listing Copy -->
+  <div class="listing-box" id="listing-copy">
+    <h2 style="color: #fff; font-size: 1.8rem; margin-bottom: 6px;">Google Play Console Listing Metadata</h2>
+    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 24px;">
+      Copy-paste these directly into <em>Play Console &gt; Grow &gt; Store presence &gt; Main store listing</em>.
+    </p>
+
+    <!-- App Title -->
+    <div class="copy-block">
+      <div class="copy-header">
+        <h4>App Name / Title (29 / 30 chars max)</h4>
+        <button class="btn-copy" onclick="copyToClipboard('app-title-text')">Copy Title</button>
+      </div>
+      <div class="copy-content" id="app-title-text">Talk with Lily: English Tutor</div>
+    </div>
+
+    <!-- Short Description -->
+    <div class="copy-block">
+      <div class="copy-header">
+        <h4>Short Description (79 / 80 chars max)</h4>
+        <button class="btn-copy" onclick="copyToClipboard('short-desc-text')">Copy Short Desc</button>
+      </div>
+      <div class="copy-content" id="short-desc-text">Speak English fluently with Lily, your friendly AI conversational tutor. BYOK.</div>
+    </div>
+
+    <!-- Full Description -->
+    <div class="copy-block">
+      <div class="copy-header">
+        <h4>Full Description (Play Store Compliant • 4,000 chars max)</h4>
+        <button class="btn-copy" onclick="copyToClipboard('full-desc-text')">Copy Full Desc</button>
+      </div>
+      <div class="copy-content" id="full-desc-text">Master spoken English with Lily, your warm, supportive, and intelligent AI conversation partner! Whether you are an absolute beginner taking your first steps or preparing for advanced workplace discussions, Lily adapts her vocabulary, tone, and pacing to match your exact level.
+
+NO SUBSCRIPTIONS • 100% PRIVATE • BRING YOUR OWN KEY (BYOK)
+Unlike typical language apps that charge $15–$25 every single month, Talk with Lily is a single one-time $4.99 purchase. You bring your own free or paid AI API key (Anthropic Claude, Groq, OpenAI, or Google Gemini), giving you total control, zero hidden fees, and complete ownership of your learning journey.
+
+🌟 THREE TAILORED LEARNING LEVELS (CEFR ALIGNED)
+
+🌱 1. Basic (A1–A2) — Gentle Foundations
+• Ideal for beginners building their first conversational steps.
+• Lily speaks in clear, short sentences using everyday vocabulary.
+• Patient corrections with encouraging guidance.
+• Topics: Greetings, family, food, numbers, hobbies, and daily routines.
+
+🌿 2. Intermediate (B1–B2) — Fluency & Confidence
+• Transition from basic words to natural conversational English.
+• Lily introduces common idioms, phrasal verbs, and natural expressions.
+• Engaging interactive dialogue with thought-provoking follow-up questions.
+• Topics: Travel, career goals, personal opinions, movies, and world cultures.
+
+🌳 3. Professional (C1–C2) — Nuanced & Business Fluency
+• Designed for professionals, academics, and executives.
+• Sophisticated vocabulary, complex grammatical structures, and business etiquette.
+• Subtle feedback on tone, style, register, and persuasive language.
+• Topics: Workplace leadership, negotiations, technical concepts, and current affairs.
+
+🎙️ REAL-TIME VOICE & INTERACTIVE AVATAR
+• Natural Voice Input (STT): Tap the microphone to speak naturally. Practice your pronunciation and sentence formation in real time.
+• Expressive Audio Feedback (TTS): Lily replies aloud with natural English text-to-speech. Hear native-like cadence and rhythm.
+• Optional D-ID Talking Video: Connect your D-ID API key to experience real-time animated video face-to-face practice with Lily.
+• Real-Time Text Fallback: Type or read whenever you are in a quiet environment.
+
+⚡ SUPPORTED AI CONVERSATION ENGINES
+Talk with Lily gives you the freedom to choose your preferred AI model:
+• Anthropic Claude (Recommended): Industry-leading conversational quality and natural tutoring pedagogy.
+• Groq (Free Tier): Powered by Llama 3.3 — lightning-fast response times with generous free access.
+• OpenAI (ChatGPT): High-reliability performance via GPT-4o mini.
+• Google Gemini (Free Tier): Seamless conversational intelligence powered by Google AI Studio.
+
+Direct links are built right into the app's settings so you can obtain your API key in seconds.
+
+🛡️ PRIVACY-FIRST & ZERO TRACKING
+• 100% Local Storage: Your chat history, difficulty settings, and API keys are stored exclusively inside your phone's private storage.
+• Direct HTTPS Transmission: Prompts are sent directly from your device to your selected AI provider's official servers. No middleman servers, no developer logging.
+• Zero Advertising & Zero Analytics: No tracking libraries, no marketing pixels, and no data harvesting. Ever.</div>
+    </div>
+  </div>
+
+  <!-- Privacy Policy Section -->
+  <div class="privacy-section" id="privacy">
+    <span class="privacy-badge">Official Privacy Policy • Play Store Compliant</span>
+    <h2>Privacy Policy for Talk with Lily: English Tutor</h2>
+    <p><strong>Effective Date:</strong> September 30, 2026<br>
+    <strong>Developer:</strong> Lalith Madanayake (<a href="mailto:lmadanayake@gmail.com" style="color: #1B5E20; font-weight: 600;">lmadanayake@gmail.com</a>)</p>
+
+    <div class="highlight-card">
+      <strong>Core Commitment:</strong> <em>Talk with Lily</em> is a privacy-first, one-time paid app. We do NOT collect, store, sell, or transmit any personal data, conversations, or account information to developer servers. The app uses a Bring-Your-Own-Key (BYOK) architecture where your private API keys and chat history stay exclusively on your device.
+    </div>
+
+    <h3>1. Information We Collect and Process</h3>
+    <p>Talk with Lily does not operate private backend servers, analytics services, or user tracking infrastructure.</p>
+    <ul>
+      <li><strong>No User Account:</strong> You do not need to register, log in, or provide personal details (name, email, phone number) to use the app.</li>
+      <li><strong>No Telemetry or Analytics:</strong> The app contains zero advertising SDKs, zero user tracking scripts, and zero diagnostic telemetry.</li>
+      <li><strong>Local Storage Only:</strong> All conversation settings, selected difficulty levels, and user API keys are stored solely on your device inside Android's private <code>SharedPreferences</code> container.</li>
+    </ul>
+
+    <h3>2. Bring Your Own Key (BYOK) Architecture</h3>
+    <p>Talk with Lily connects directly from your device to third-party AI model providers using the credentials you provide:</p>
+    <ul>
+      <li>Supported providers include Anthropic (Claude), Groq, OpenAI, and Google (Gemini).</li>
+      <li>When you send a message, your conversation prompt is transmitted directly from your device to the official endpoint of your chosen provider via encrypted HTTPS.</li>
+      <li>Your API keys and conversations are never routed through, stored on, or accessible by our servers or any third-party intermediary.</li>
+      <li>Your interactions with each AI provider are subject to that respective provider's terms of service and privacy policy.</li>
+    </ul>
+
+    <h3>3. Device Permissions &amp; Data Usage</h3>
+    <ul>
+      <li><strong>Microphone (<code>android.permission.RECORD_AUDIO</code>):</strong> Used only when you tap the microphone button to practice spoken English. Audio is converted into text via the Android operating system's built-in Speech Recognizer. Audio recordings are never retained, stored, or uploaded to any server.</li>
+      <li><strong>Internet (<code>android.permission.INTERNET</code>):</strong> Used exclusively to communicate with the user-selected AI API endpoints and D-ID video service.</li>
+    </ul>
+
+    <h3>4. Data Retention and Deletion</h3>
+    <p>Because all data resides strictly on your local device:</p>
+    <ul>
+      <li>You can wipe your chat history, API keys, and preferences at any time by clearing the app's storage in <em>Android Settings &gt; Apps &gt; Talk with Lily &gt; Storage &gt; Clear Data</em>.</li>
+      <li>Uninstalling the app immediately and permanently purges all local data from your device.</li>
+    </ul>
+
+    <h3>5. Children's Privacy</h3>
+    <p>Our app does not knowingly collect or solicit any personally identifiable information from children under the age of 13. The app is rated for Everyone and operates completely client-side.</p>
+
+    <h3>6. Changes to this Privacy Policy</h3>
+    <p>We may update our Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
+
+    <h3>7. Contact Information</h3>
+    <p>If you have any questions or feedback regarding this Privacy Policy or the security of the app, please contact:</p>
+    <p><strong>Lalith Madanayake</strong><br>
+    Email: <a href="mailto:lmadanayake@gmail.com" style="color: #1B5E20; font-weight: 600;">lmadanayake@gmail.com</a><br>
+    Location: Sri Lanka</p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; 2026 <strong>Talk with Lily</strong>. All rights reserved.<br>
+      Developed by <strong>Lalith Madanayake</strong> (<a href="mailto:lmadanayake@gmail.com">lmadanayake@gmail.com</a> | +94 77 721 0775)<br>
+      <a href="#privacy">Privacy Policy</a> • <a href="#listing-copy">Store Copy</a>
+    </p>
+  </footer>
+
+  <script>
+    function copyToClipboard(elementId) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Copied to clipboard ✓");
+      }).catch(err => {
+        console.error("Could not copy text: ", err);
+      });
+    }
+  </script>
+
+</body>
+</html>
